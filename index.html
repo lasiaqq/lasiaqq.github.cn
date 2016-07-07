@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Lasiaqq.GitHub.cn : To share! To grow!">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Lasiaqq.GitHub.cn</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lasiaqq/lasiaqq.github.cn">View on GitHub</a>
+
+          <h1 id="project_title">Lasiaqq.GitHub.cn</h1>
+          <h2 id="project_tagline">To share! To grow!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/lasiaqq/lasiaqq.github.cn/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/lasiaqq/lasiaqq.github.cn/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <hr>
+
+<p>Q1:输入inaccess进入相应的服务后，每输入一个字符，提示语出现一次。</p>
+
+<p>A1:将TERM环境变量改为LINUX即可：export TERM=LINUX。</p>
+
+<p>Q2:将TERM改为LINUX后出现错误：error opening terminal Linux.</p>
+
+<p>A2:解决方法如下：
+   mkdir -p /usr/share/terminfo/l
+   cd /usr/share/terminfo/l
+   ln -s /lib/terminfo/l/linux linux</p>
+
+<p>Q3:scf版本问题</p>
+
+<p>A3:SCF-6.5.0900F1T6-LINUX5.5-RUNTIME-ORACLE64.tar.gz这个版本的scf,无法触发我编写的http业务逻辑；版本６对json的支持不够；版本７增加了对json的支持，但是需要安装mix数据库，另外版本７在编写http业务时需要引入包'cinhttp'；</p>
+
+<p>Q4:scf编写http业务逻辑需要的配置文件</p>
+
+<p>A4:config.ininit config.managementports scf.profile scfenv config.httpservice config.server.* </p>
+
+<hr>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Lasiaqq.GitHub.cn maintained by <a href="https://github.com/lasiaqq">lasiaqq</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

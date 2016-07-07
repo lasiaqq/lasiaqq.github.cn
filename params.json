@@ -1,0 +1,6 @@
+{
+  "name": "Lasiaqq.GitHub.cn",
+  "tagline": "To share! To grow!",
+  "body": "\r\n***\r\nQ1:输入inaccess进入相应的服务后，每输入一个字符，提示语出现一次。\r\n\r\nA1:将TERM环境变量改为LINUX即可：export TERM=LINUX。\r\n\r\nQ2:将TERM改为LINUX后出现错误：error opening terminal Linux.\r\n\r\nA2:解决方法如下：\r\n   mkdir -p /usr/share/terminfo/l\r\n   cd /usr/share/terminfo/l\r\n   ln -s /lib/terminfo/l/linux linux\r\n\r\nQ3:scf版本问题\r\n\r\nA3:SCF-6.5.0900F1T6-LINUX5.5-RUNTIME-ORACLE64.tar.gz这个版本的scf,无法触发我编写的http业务逻辑；版本６对json的支持不够；版本７增加了对json的支持，但是需要安装mix数据库，另外版本７在编写http业务时需要引入包'cinhttp'；\r\n\r\nQ4:scf编写http业务逻辑需要的配置文件\r\n\r\nA4:config.ininit config.managementports scf.profile scfenv config.httpservice config.server.* \r\n\r\n***",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
